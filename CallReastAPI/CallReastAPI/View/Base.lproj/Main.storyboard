@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vts-ND-tKf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CallReastAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get All Country Information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tar-m6-sts">
+                                <rect key="frame" x="10" y="64" width="355" height="73.5"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkR-IE-v0T">
+                                <rect key="frame" x="0.0" y="147.5" width="375" height="519.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tar-m6-sts" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7Qz-7d-VQr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HkR-IE-v0T" secondAttribute="bottom" id="Amn-bw-aAt"/>
+                            <constraint firstItem="HkR-IE-v0T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BU9-ch-HQz"/>
+                            <constraint firstItem="HkR-IE-v0T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WUF-m9-FFO"/>
+                            <constraint firstItem="tar-m6-sts" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="fOd-hV-fWg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tar-m6-sts" secondAttribute="trailing" constant="10" id="hBv-V1-2Ej"/>
+                            <constraint firstItem="HkR-IE-v0T" firstAttribute="top" secondItem="tar-m6-sts" secondAttribute="bottom" constant="10" id="ix4-L9-Lx1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Svv-WB-1gb"/>
+                    <connections>
+                        <outlet property="videoView" destination="HkR-IE-v0T" id="T4I-Wv-C5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447.19999999999999" y="56.221889055472268"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="8xA-eh-btt">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="z3s-he-lLo" customClass="HomeVC" customModule="CallReastAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e0y-97-18l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get All Country Information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqG-53-Qg2">
+                                <rect key="frame" x="10" y="20" width="355" height="73.5"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ph1-OH-T7L">
+                                <rect key="frame" x="0.0" y="103.5" width="375" height="563.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="z3s-he-lLo" id="0v5-cM-wpL"/>
+                                    <outlet property="delegate" destination="z3s-he-lLo" id="orn-40-UZR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dGr-Rv-Obq"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mqG-53-Qg2" firstAttribute="leading" secondItem="dGr-Rv-Obq" secondAttribute="leading" constant="10" id="S6y-o1-7V2"/>
+                            <constraint firstItem="ph1-OH-T7L" firstAttribute="trailing" secondItem="dGr-Rv-Obq" secondAttribute="trailing" id="VEy-Cn-XXy"/>
+                            <constraint firstItem="ph1-OH-T7L" firstAttribute="leading" secondItem="dGr-Rv-Obq" secondAttribute="leading" id="g3F-fP-NVy"/>
+                            <constraint firstItem="mqG-53-Qg2" firstAttribute="top" secondItem="dGr-Rv-Obq" secondAttribute="top" constant="20" id="mVJ-O9-syv"/>
+                            <constraint firstItem="dGr-Rv-Obq" firstAttribute="trailing" secondItem="mqG-53-Qg2" secondAttribute="trailing" constant="10" id="sko-kX-y0C"/>
+                            <constraint firstItem="ph1-OH-T7L" firstAttribute="top" secondItem="mqG-53-Qg2" secondAttribute="bottom" constant="10" id="uSP-QL-dag"/>
+                            <constraint firstItem="dGr-Rv-Obq" firstAttribute="bottom" secondItem="ph1-OH-T7L" secondAttribute="bottom" id="xec-Qv-zLM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CountryTable" destination="ph1-OH-T7L" id="8Du-Uq-FHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQZ-0l-38H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159.2" y="55.322338830584712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x3K-L1-ypi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vts-ND-tKf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IBK-1H-dHH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yEJ-jg-qjS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHB-AZ-vap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-492" y="56.221889055472268"/>
+        </scene>
+    </scenes>
+</document>
