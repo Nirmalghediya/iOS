@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "zlimageeditor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/longitachi/ZLImageEditor.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ba2e7ad1993a25a1c2df762b7e16f2426127f41b"
+      }
+    }
+  ],
+  "version" : 2
+}
