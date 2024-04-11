@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCVCell" id="gTV-IL-0wX" customClass="ImageCVCell" customModule="PicsLight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2J-7L-eEA">
+                        <rect key="frame" x="5" y="5" width="170" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageSticker13" translatesAutoresizingMaskIntoConstraints="NO" id="Gch-PJ-O0G">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="dZe-NY-QLv"/>
+                                    <constraint firstAttribute="width" constant="170" id="jgc-cG-Fcz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gch-PJ-O0G" secondAttribute="trailing" id="0ER-Iu-lzZ"/>
+                            <constraint firstItem="Gch-PJ-O0G" firstAttribute="top" secondItem="y2J-7L-eEA" secondAttribute="top" id="EZT-S9-WVG"/>
+                            <constraint firstItem="Gch-PJ-O0G" firstAttribute="leading" secondItem="y2J-7L-eEA" secondAttribute="leading" id="a3a-Wl-srC"/>
+                            <constraint firstAttribute="bottom" secondItem="Gch-PJ-O0G" secondAttribute="bottom" id="cvp-fj-u1s"/>
+                            <constraint firstAttribute="height" constant="250" id="sy4-dc-zxg"/>
+                            <constraint firstAttribute="width" constant="170" id="zmi-md-r1T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="y2J-7L-eEA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eks-6Y-ZZh"/>
+                <constraint firstItem="y2J-7L-eEA" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mfc-yc-Id3"/>
+            </constraints>
+            <connections>
+                <outlet property="BG_View" destination="y2J-7L-eEA" id="XC5-Ms-pFQ"/>
+                <outlet property="Save_Image" destination="Gch-PJ-O0G" id="tvr-fM-g5e"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="9"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="imageSticker13" width="200" height="200"/>
+    </resources>
+</document>
